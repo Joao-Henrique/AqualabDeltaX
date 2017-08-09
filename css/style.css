@@ -1,19 +1,28 @@
-#logo {
-  position:absolute;
-  max-width:40%;
-  padding:3%;
-  right:0%;
+h1{
+  background-color:#286090;
+  color:white;
+  margin:1%;
+  border-bottom-style:solid;
+  border-radius:8px;
+  font-size:17px;
+  text-align:center;
+
 }
-#background {
-  position:initial;
-  max-width: 100%;
-  height: auto;
+#screen{
+  background-image:url("C:/Users/jppul/Documents/GitHubRepositories/AqualabDeltaX/img/Aqualab.png");
+  background-repeat:no-repeat;
+  background-size:100%;
+  max-width:500px;
 }
-h1 {
-  position:relative;
-  text-align: center;
+#resultDiv{
+  background-color:white;
+  border-style: solid;
+  border-color:black;
+  border-radius:2em;
+  width:40%;
+  text-align:center;
 }
-form {
-  position:relative;
-  text-align: center;
+#instruments{
+  padding:40%;
 }
+

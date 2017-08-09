@@ -7,6 +7,7 @@
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <link rel="stylesheet" href="css/style.css">
@@ -17,31 +18,28 @@
 <!-- ======================================= -->
 
 <body>
-
-  <div>
-  <img id="logo" src="C:\Users\jppul\Documents\GitHubRepositories\AqualabDeltaX\img\logoAqualab.png" alt="AqualabLogo">
-  </div>
-  <img id="background" src="C:\Users\jppul\Documents\GitHubRepositories\AqualabDeltaX\img\scientistBackgound.jpg" alt="ScientistBackground">
-
+<h1>Cálculo do delta X</h1>
+<div class="container" id="screen">
+  <div class"container" id="instruments">
 <!--TITLE-->
-<h1>Cálculo do Delta X</h1>
+
 
 <!--OUTPUT-->
-<div class="text-center" id="resultDiv">
+<div class="container text-center" id="resultDiv">
   <span class= "text-center" id="result">0</span>
 </div>
 
 <!--INPUT-->
 <div class="text-center">
-  Primeira Leitura:<br>
-  <input type="text" placeholder="D1" name="dOne" id="dOne"><br>
-  Segunda Leitura:<br>
-  <input type="text" placeholder="D2" name="dTwo" id="dTwo"><br><br>
+  <br>
+  <input type="text" class="text-center" placeholder="D1" name="dOne" id="dOne"><br>
+  <br>
+  <input type="text" class="text-center" placeholder="D2" name="dTwo" id="dTwo"><br><br>
 
 <!--SUBMIT BUTTON-->
-  <input type="submit" value="Submit" id="calculate">
+  <input type="submit" value="Submit" id="calculate" class="btn btn-primary">
 </div>
-  
+  </div>
   
 
   
@@ -49,7 +47,7 @@
 <!--FOOTER-->
 
 
-
+</div>
 <!-- SCRIPTS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
