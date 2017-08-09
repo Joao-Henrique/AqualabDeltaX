@@ -1,15 +1,19 @@
+#logo {
+  position:absolute;
+  max-width:40%;
+  padding:3%;
+  right:0%;
+}
+#background {
+  position:initial;
+  max-width: 100%;
+  height: auto;
+}
 h1 {
+  position:relative;
   text-align: center;
 }
 form {
-  text-align: center;
-}
-#logo {
   position:relative;
-  width:128px;
-  height:128px;
-}
-#background {
-  max-width: 100%;
-  height: auto;
+  text-align: center;
 }
