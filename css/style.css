@@ -9,7 +9,7 @@ h1{
 
 }
 #screen{
-  background-image:url("C:/Users/jppul/Documents/GitHubRepositories/AqualabDeltaX/img/Aqualab.png");
+  background-image:url("../img/Aqualab.png");
   background-repeat:no-repeat;
   background-size:100%;
   max-width:500px;
