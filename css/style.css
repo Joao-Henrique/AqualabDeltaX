@@ -4,3 +4,12 @@ h1 {
 form {
   text-align: center;
 }
+#logo {
+  position:relative;
+  width:128px;
+  height:128px;
+}
+#background {
+  max-width: 100%;
+  height: auto;
+}

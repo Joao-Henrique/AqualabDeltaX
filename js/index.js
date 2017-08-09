@@ -42,7 +42,7 @@ var testParameters = function(){
       var mean = Math.abs(numberA + numberB) / 2;
       
 //CALCULATES THE DELTA X AND STORES IT AS VAR "RES"
-      var res = (Math.abs(numberA - numberB) / mean)*100;
+      var res = ((Math.abs(numberA - numberB) / mean)*100).toFixed(2);
 // IF INPUT IS NOT A NUMBER PRINT ERROR MESSAGE
 //          if (isNaN(a) || isNaN(b)) {
 //            $("#result").text("Invalid result - Please try again!");
