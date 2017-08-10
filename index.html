@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>Calculate Delta X</title>
   
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+
+  
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -18,43 +18,60 @@
 <!-- ======================================= -->
 
 <body>
-<h1>Cálculo do delta X</h1>
+
+<!--  TITLE  
+<h1>Cálculo do delta X</h1>-->
+    
+
+
+<!--  IMAGE  -->
+<img src="C:\Users\jppul\Documents\GitHubRepositories\AqualabDeltaX\img\Aqualab.png">
 <div class="container" id="screen">
-  <div class"container" id="instruments">
-<!--TITLE-->
 
+<!-- -->
+<div class"container" id="instruments">
 
+<!--  OUTPUT RESULT  -->
+    <div class="container" id="resultDiv">
+      <h2 class= "text-center" id="result">0</h2>
+    </div>
 
-<div class="container text-center" id="resultDiv">
+<!--  INPUT  -->
+    <div class="container" id="fields">
+      <div class="row">
+        <div class="col-xs-4">
+          <input type="text" required class="" placeholder="D1" name="dOne" id="dOne"><br>
+        </div>
+        <div class="col-xs-4">
+          <input type="text" required class="" placeholder="D2" name="dTwo" id="dTwo"><br><br>
+        </div>
 
-  <!--OUTPUT-->
-  <span class= "text-center" id="result">0</span>
-</div>
+<!--  SUBMIT BUTTON  -->
+        <div class="col-xs-2">
+          <button  type="submit" id="calcBtn" class="btn btn-primary">Go!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!--INPUT-->
-<div class="text-center">
-  <br>
-  <input type="text" class="text-center" placeholder="D1" name="dOne" id="dOne"><br>
-  <br>
-  <input type="text" class="text-center" placeholder="D2" name="dTwo" id="dTwo"><br><br>
-
-<!--SUBMIT BUTTON-->
-  <input type="submit" value="Submit" id="calculate" class="btn btn-primary">
-</div>
+<!--  INFO BUTTON  -->
+  <div class="col-xs-4">
+    <buttons id="infoBtn" class="btn">Help</button>
   </div>
   
 
   
 
-<!--FOOTER-->
+<!--  FOOTER  -->
 
 
 </div>
-<!-- SCRIPTS -->
+<!--  SCRIPTS  -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 </html>

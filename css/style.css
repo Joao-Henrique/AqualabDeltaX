@@ -1,28 +1,61 @@
-h1{
-  background-color:#286090;
+body{
+  background-color:white;
+}
+
+h2{
+  position:absolute;
+  background-color:#87bdd8;
   color:white;
-  margin:1%;
-  border-bottom-style:solid;
-  border-radius:8px;
   font-size:17px;
   text-align:center;
-
+  height:auto;
 }
-#screen{
-  background-image:url("../img/Aqualab.png");
-  background-repeat:no-repeat;
-  background-size:100%;
-  max-width:500px;
+p{
+  position:absolute;
+  background-color:#87bdd8;
+  color:white;
+  font-size:17px;
+  text-align:center;
+  height:auto;
+}
+img{
+  position:absolute;
+  padding:0%;
+  width:100%;
+}
+input{
+  height:120px;
+  width:220px;
+  border-radius:17px;
+  font-size:80px;
+}
+#calcBtn{
+  font-size:60px;
+  height:120px;
+  width:220px;
+  border-radius:17px;
+  font-size:80px;
+}
+#infoBtn{
+  font-size:60px;
+  height:120px;
+  width:220px;
+  border-radius:17px;
+  font-size:80px;
+  margin-top:90%;
 }
 #resultDiv{
-  background-color:white;
-  border-style: solid;
-  border-color:black;
-  border-radius:2em;
-  width:40%;
-  text-align:center;
+  height:120px;
+  width:220px;
 }
-#instruments{
-  padding:40%;
+#result{
+  font-size:80px;
 }
+#fields{
+  margin-top:80%;
+  float:center;
+  padding:0%;
+}
+
+
 
