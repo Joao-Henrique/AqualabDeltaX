@@ -1,5 +1,6 @@
 $(document).ready(function(){
    
+      $("#resultDiv").hide();
 // TEST
 console.log("hello" + $('#dOne').val());
 
@@ -20,7 +21,17 @@ console.log("hello" + $('#dOne').val());
 
      
 // SETTING UP THE EVENT LISTENER
-   $("#calculate").click(function(){
+   $("#calcBtn").click(function(){
+
+// ON CLICK SHOW RESULTS BOX
+      $("#resultDiv").show();
+
+////////////////////// WIP /////////////////
+ //     $("#resultsDiv").click(function(){
+ //       $("#panel").slideDown("slow");
+  //  });
+ //     $("#resultDiv").slideDown("slow");
+////////////////////// WIP ////////////////
 
       //TEST IF THIS IS OK
 var testParameters = function(){
