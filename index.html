@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Calculate Delta X</title>
   
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
 
@@ -32,7 +31,7 @@
 <div class"container" id="instruments">
 
 <!--  OUTPUT RESULT  -->
-    <div class="container" id="resultDiv">
+    <div class="container container-fluid" id="resultDiv">
       <h2 class= "text-center" id="result">0</h2>
     </div>
 
@@ -40,15 +39,15 @@
     <div class="container" id="fields">
       <div class="row">
         <div class="col-xs-4">
-          <input type="text" required class="text-center" placeholder="D1" name="dOne" id="dOne"><br>
+          <input type="text" required class="text-center interaction" placeholder="D1" name="dOne" id="dOne"><br>
         </div>
         <div class="col-xs-4">
-          <input type="text" required class="text-center" placeholder="D2" name="dTwo" id="dTwo"><br><br>
+          <input type="text" required class="text-center interaction" placeholder="D2" name="dTwo" id="dTwo"><br><br>
         </div>
 
 <!--  SUBMIT BUTTON  -->
         <div class="col-xs-2">
-          <button  type="submit" id="calcBtn" class="btn btn-primary">Go!</button>
+          <button  type="submit" id="calcBtn" class="btn btn-primary interaction">Go!</button>
         </div>
       </div>
     </div>
@@ -56,7 +55,7 @@
 
 <!--  INFO BUTTON  -->
   <div class="" id="info">
-    <buttons id="infoBtn" type="submit" class="btn btn-info">Help</button>
+    <buttons id="infoBtn" type="submit" class="btn btn-info interaction glyphicon glyphicon-info-sign"></button>
   </div>
   
 
