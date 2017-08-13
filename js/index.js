@@ -1,8 +1,18 @@
 $(document).ready(function(){
    
       $("#resultDiv").hide();
+      $("#infoDiv").hide();
 // TEST
 console.log("hello" + $('#dOne').val());
+
+//////////////////////////////////////////
+///////  TEST IF THIS IS OK  /////////////
+var testParameters = function(){
+      console.log("test var a = " + numberA + " === OK");
+      console.log("test var b = " + b + " === OK");
+      console.log("test var mean = " + mean + " === OK");
+      console.log("test var res = " + res + " === OK");
+};
 
 //GET'S INPUT FOR D1 AND STORES IT AS VAR "A"
       var a = $('#dOne').val();
@@ -18,28 +28,20 @@ console.log("hello" + $('#dOne').val());
 //CALCULATES THE DELTA X AND STORES IT AS VAR "RES"
       var res = Math.abs(numberA - numberB) / mean;
       
+////////////////////////////////////////////      
+/////// ON CLICK SHOW INFO BOX  ////////////
+    $("#infoBtn").click(function(){
+      $("#resultDiv").hide();
+      $("#infoDiv").show();
+    });
 
-     
-// SETTING UP THE EVENT LISTENER
+////////////////////////////////////////////      
+/////// ON CLICK SHOW RESULT BOX  //////////
    $("#calcBtn").click(function(){
-
-// ON CLICK SHOW RESULTS BOX
+      $("#infoDiv").hide();
       $("#resultDiv").show();
 
-////////////////////// WIP /////////////////
- //     $("#resultsDiv").click(function(){
- //       $("#panel").slideDown("slow");
-  //  });
- //     $("#resultDiv").slideDown("slow");
-////////////////////// WIP ////////////////
-
-      //TEST IF THIS IS OK
-var testParameters = function(){
-      console.log("test var a = " + numberA + " === OK");
-      console.log("test var b = " + b + " === OK");
-      console.log("test var mean = " + mean + " === OK");
-      console.log("test var res = " + res + " === OK");
-};
+      
      
 //GET'S INPUT FOR D1 AND STORES IT AS VAR "A"
       var a = $('#dOne').val();
@@ -54,17 +56,33 @@ var testParameters = function(){
       
 //CALCULATES THE DELTA X AND STORES IT AS VAR "RES"
       var res = ((Math.abs(numberA - numberB) / mean)*100).toFixed(2);
-// IF INPUT IS NOT A NUMBER PRINT ERROR MESSAGE
-//          if (isNaN(a) || isNaN(b)) {
-//            $("#result").text("Invalid result - Please try again!");
-//          }
       
 // IF EVERYTHING IS OK PRINT THE RESULT
-//          else {
-            $("#result").html("O delta X é " + res + " % ");
+     if(res<=8){
+            $("#result").hide();
+            $("#icon").show();
+            $("#resultText").html("O delta X é:</br>");
+            $("#icon").html("&nbsp" + res + "%");
+            $("#icon").css("background-color", "green");
+            $("#icon").addClass("glyphicon glyphicon-ok");
+     }
+      else if(res>8){
+            $("#result").hide();
+            $("#icon").show();
+            $("#resultText").html("O delta X é:</br>");
+            $("#icon").html("&nbsp" + res + "%");
+            $("#icon").css("background-color", "red");
+            $("#icon").addClass("glyphicon glyphicon-remove");
+     }
+      else{
+            $("#icon").hide();
+            $("#result").html('Colocar valores corretamente em "D1" e "D2" e pressionar o botão "Go!"');
+            $("#result").css("border-color", "#F57F17");
+            $("#result").css("font-size","x-large");
+   }
 
 // TEST
-            testParameters();
+           testParameters();
 //          }
     });
 });

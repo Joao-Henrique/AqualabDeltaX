@@ -5,11 +5,32 @@ background-size:100%;
 width:100vw;
 height:100vh;
 }
-#resultDiv{
-  padding-top:40%;
-  background-color:lightskyblue;
-  opacity:0.7;
+.jumbotron{
+  margin-top:1%;
+  position:absolute;
+  width:60%;
+  background-color:#1565C0;
   color:white;
+}
+#info{
+  font-size:large;
+  margin:0;
+}
+#result{
+  border-style:dotted;
+  border-color:#1565C0;
+  border-radius:17px;
+}
+#icon{
+  padding:10%;
+  display:inline-block;
+  text-align:center;
+  border-style:solid;
+  border-color:white;
+  border-radius: 17px;
+}
+.row{
+  margin-top:60%;
 }
 .interaction{
   height:100%;

@@ -26,16 +26,24 @@
 <!-- -->
       <div class"container" id="instruments">
 
-
-
-<!--  INPUT  -->
-       
-
-          <!--  OUTPUT RESULT  -->
+<!--  OUTPUT RESULT  -->
         <div class="jumbotron" id="resultDiv">
-          <h2 class= "text-center" id="result">0</h2>
+          <h2 class= "text-center" id="resultText"></h2>
+          <h1 class= "text-center" id="result"></h1>
+          <h3 class= "text-center" id="icon"></h3>
         </div>
 
+<!--  OUTPUT INFO  -->
+        <div class="jumbotron" id="infoDiv">
+          <h2 class= "text-left" id="info">Calcular a percentagem de variação:</br></br>
+            Nota: Deve usar "." e não ",".</br>
+            1 - Colocar o valor da 1ª leitura no campo "D1".</br>
+            2 - Colocar o valor da 2ª leitura no campo "D2".</br>
+            3 - Pressionar o botão "Go!".</br>
+            4 - Votos de um ótimo dia de colheitas :)</h2>
+        </div>
+
+<!--  INPUT  -->
         <div class="row">
           <div class="">
             <input type="text" class="text-center interaction" placeholder="D1" name="dOne" id="dOne"><br>
@@ -48,18 +56,13 @@
           <div class="">
             <button  type="submit" id="calcBtn" class="btn btn-primary interaction">Go!</button>
           </div>
-        </div>
 
 <!--  INFO BUTTON  -->
-        <div class="row">
           <div class="">
             <button id="infoBtn" type="submit" class="btn btn-info interaction">info</button>
           </div>
         </div>
       </div>
-  
-
-  
 
 <!--  FOOTER  -->
 
@@ -74,10 +77,11 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
+    <script src="js/index.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js.index.js"></script>
+    
   </body>
 </html>
