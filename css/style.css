@@ -1,50 +1,21 @@
-body{
-  background-color:white;
-  max-width:400px;
-  margin:auto;
-  padding:0;
-}
-
-h2{
-  position:absolute;
-  background-color:#87bdd8;
-  color:white;
-  font-size:17px;
-  text-align:center;
-  height:auto;
-}
-p{
-  position:absolute;
-  background-color:#87bdd8;
-  color:white;
-  font-size:17px;
-  text-align:center;
-  height:auto;
-}
-img{
-  position:absolute;
-  padding:0%;
-  width:100%;
-  max-width:400px;
-}
 #screen{
-margin:0;
-padding:0;
-width:100%;
-max-width:400px;
+background-image:url("../img/Aqualab.png");
+background-repeat:no-repeat;
+background-size:100%;
+width:100vw;
+height:100vh;
 }
 #resultDiv{
-  position:absolute;
-  height:100px;
-  width:100%;
-  margin-top:40%;
+  position:;
+  height:50vh;
+  width:100vw;
   border-radius:17px;
 }
 #result{
   font-size:70px;
 }
 #fields{
-  margin-top:80%;
+  width:100vw;
  }
 #infoBtn{
   font-size:35px; 
@@ -57,14 +28,12 @@ max-width:400px;
   padding-top:4px;
 }
 .interaction{
-  display:flex;
-  justify-content:space-around;
-  height:40px;
-  width:120px;
+  height:100%;
+  width:30%;
   border-radius:17px;
   font-size:30px;
-  margin:0%;
-  padding:0%;
+  margin:0;
+  padding:0;
 }
 
 
