@@ -1,3 +1,9 @@
+html{
+  height:100%;
+  width:100%;
+  max-width:500px;
+  max-height:600px;
+}
 #screen{
  background-image:url("../img/Aqualab.png");
 background-repeat:no-repeat;
@@ -37,8 +43,10 @@ background-repeat:no-repeat;
           width:30vw;
         padding:0;
          margin:1% 1% 1% 65%;
-  border-radius:17px;
       font-size:30px;
+        outline: none;
+         border: none;
+  border-radius: 9px;
 }
 #infoBtn{
   margin:1% 1% 1% 65%;
