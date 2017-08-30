@@ -5,16 +5,6 @@ $(document).ready(function(){
       $("#infoDiv").hide();
 
 ////////////////////////////////////////////
-////     FUNCTION TO TEST VARIABLES    /////
-////////////////////////////////////////////
-      var testParameters = function(){
-            console.log("test var a = " + numberA + " === OK");
-            console.log("test var b = " + b + " === OK");
-            console.log("test var mean = " + mean + " === OK");
-            console.log("test var res = " + res + " === OK");
-      };
-      
-////////////////////////////////////////////
 ////     ON CLICK SHOW INFO BOX        /////
 ////////////////////////////////////////////
       $("#infoBtn").click(function(){
@@ -73,9 +63,21 @@ $(document).ready(function(){
             $("#result").css("font-size","x-large");
       }
 
-//////////////////////////////////////////////////
-// CALL VARIABLES TEST DEFINED ON THE BEGINNING // 
-//////////////////////////////////////////////////
+////////////////////////////////////////////
+////     FUNCTION TO TEST VARIABLES    /////
+////////////////////////////////////////////
+      var testParameters = function(){
+            console.log("test var a = " + a + " === OK");
+            console.log("test var b = " + b + " === OK");
+            console.log("test var numberA = " + numberA + " === OK");
+            console.log("test var numberB = " + numberB + " === OK");
+            console.log("test var mean = " + mean + " === OK");
+            console.log("test var res = " + res + " === OK");
+      };
+      
+/////////////////////////////////
+//    START VARIABLES TEST    ///
+/////////////////////////////////
       testParameters(); 
     });
 });
